@@ -15,7 +15,7 @@
   \***************************/
 /***/ (() => {
 
-eval("const butInstall = document.getElementById('buttonInstall');\n\n// Logic for installing the PWA\n// TODO: Add an event handler to the `beforeinstallprompt` event\nwindow.addEventListener('beforeinstallprompt', (event) => {\n    // Store the triggered events\n    window.deferredPrompt = event;\n\n    // Remove the hidden class from the button.\n    butInstall.classList.toggle('hidden', false);\n});\n\n// TODO: Implement a click event handler on the `butInstall` element\nbutInstall.addEventListener('click', async () => {\n    const promptEvent = window.deferredPrompt;\n\n    if (!promptEvent) {\n     return;\n    }\n  \n    // Show prompt\n    promptEvent.prompt();\n    \n    // Reset the deferred prompt variable, it can only be used once.\n    window.deferredPrompt = null;\n    \n    butInstall.classList.toggle('hidden', true); \n});\n\n// TODO: Add an handler for the `appinstalled` event\nwindow.addEventListener('appinstalled', (event) => {\n   // Clear prompt\n  window.deferredPrompt = null; \n});\n\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find package '@babel/plugin-proposal-object-rest-spread' imported from /Users/poonamzore/bootcamp/PWA-Text-editor/client/babel-virtual-resolve-base.js\\n    at new NodeError (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:203:5)\\n    at packageResolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:873:9)\\n    at moduleResolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:902:20)\\n    at defaultResolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:985:15)\\n    at resolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:999:12)\\n    at resolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/config/files/import-meta-resolve.js:13:10)\\n    at tryImportMetaResolve (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/config/files/plugins.js:123:45)\\n    at resolveStandardizedNameForImport (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/config/files/plugins.js:145:19)\\n    at resolveStandardizedName (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/config/files/plugins.js:154:12)\\n    at loadPlugin (/Users/poonamzore/bootcamp/PWA-Text-editor/client/node_modules/@babel/core/lib/config/files/plugins.js:47:20)\");\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("const butInstall = document.getElementById('buttonInstall');\n\n// Logic f
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/js/install.js"]();
 /******/ 	
