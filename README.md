@@ -8,7 +8,7 @@ This application lets a user create notes or code snippets with or without an in
 - npm start
 
 ## Link
-  
+ https://jatetexteditor-pwa.herokuapp.com/ 
 
 ## Questions
   Reach me @ poonam.burris@gmail.com for any further questions regarding this application
