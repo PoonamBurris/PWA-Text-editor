@@ -1,4 +1,4 @@
-# Text Editor Starter Code
+# PWA-Text-editor
 
 This application lets a user create notes or code snippets with or without an internet connection so that it can be reliably retrieved for later use.
 
